@@ -37,6 +37,16 @@ Living memory of this portfolio project.
 
 ## Change log
 
+### 2026-08-03 — Git remote `origin` added (push needs user auth)
+
+**What:** `git remote add origin https://github.com/Gurpreet-Singh-Bhupal/portfolio.git`. Push failed in agent shell (GitHub login dialog). Added `.cursor/fuse-overlay/` to `.gitignore`.
+
+**Why:** User `git push` error: `'origin' does not appear to be a git repository`.
+
+**Files:** `.gitignore`, `ProjectMemory.md`
+
+---
+
 ### 2026-08-03 — Hero photo: keep turban, hide side black bars
 
 **What:** Reverted uniform zoom; use horizontal-only scale (`scale-x`) + higher object position so turban stays visible while passport black side edges clip inside circle.

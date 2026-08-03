@@ -14,6 +14,7 @@ dist-ssr
 .env
 .env.*.local
 .history
+.cursor/fuse-overlay/
 
 # Editor directories and files
 .vscode/*
