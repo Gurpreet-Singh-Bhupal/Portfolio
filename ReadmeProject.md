@@ -17,7 +17,7 @@ Update this file whenever code structure, files, or responsibilities change.
 | Theme | Gold/yellow accent; day/night toggle + font cycle button |
 | Social | LinkedIn + GitHub from Resume.md; project GitHub link; Live URL when deployed |
 | Contact | EmailJS parked; mailto + Open in Gmail |
-| Hosting | GitHub Pages at `https://Gurpreet-Singh-Bhupal.github.io/portfolio/` |
+| Hosting | GitHub Pages at `https://Gurpreet-Singh-Bhupal.github.io/Portfolio/` |
 | Entry URL | `npm run dev` → usually `http://localhost:5173` |
 
 ---
@@ -199,10 +199,10 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 **Option B:** click the circle on Hero → choose an image (saved in this browser only).
 
 ### `.github/workflows/deploy-pages.yml`
-- On push to `main`: `npm ci` → `npm run build` → deploy `dist/` to GitHub Pages.
+- On push to `main`: `npm ci` → `npm run build` → publish `dist/` to **`gh-pages`** branch (peaceiris action).
 
 ### `vite.config.ts`
-- Dev: `base: '/'`. Production build: `base: '/portfolio/'` for GitHub Pages project site.
+- Dev: `base: '/'`. Production build: `base: '/Portfolio/'` (matches repo name on GitHub).
 
 ### `src/assets/`
 - Optional bundled images (prefer click-upload or `public/` for profile photo).

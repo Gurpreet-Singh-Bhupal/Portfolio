@@ -324,7 +324,7 @@ https://github.com/Gurpreet-Singh-Bhupal/portfolio
 
 Live
 
-https://Gurpreet-Singh-Bhupal.github.io/portfolio/
+https://Gurpreet-Singh-Bhupal.github.io/Portfolio/
 
 ---
 

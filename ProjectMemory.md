@@ -30,12 +30,24 @@ Living memory of this portfolio project.
 | Contact | EmailJS parked; **Send via email app** (mailto) + **Open in Gmail** (Chrome) |
 | Routing | None (section IDs + smooth scroll) — Router postponed |
 | SEO | Basic meta/OG in `index.html` + `robots.txt` / `sitemap.xml` |
-| Deployment | **GitHub Pages** — Actions workflow; URL `https://Gurpreet-Singh-Bhupal.github.io/portfolio/` |
+| Deployment | **GitHub Pages** — workflow publishes `gh-pages` branch; URL `https://Gurpreet-Singh-Bhupal.github.io/Portfolio/` |
 | Docs | Architecture, Resume guide, `README.md`, `ReadmeProject.md`, `ProjectMemory.md` |
 
 ---
 
 ## Change log
+
+### 2026-08-03 — Fix GitHub Pages deploy 404
+
+**What:** Deploy workflow switched to `peaceiris/actions-gh-pages` (pushes `gh-pages` branch). Vite `base` and live URLs updated to `/Portfolio/` (repo name casing).
+
+**Why:** `deploy-pages` action failed with 404 — Pages “GitHub Actions” source often not enabled on first run; branch deploy is simpler.
+
+**User action:** Settings → Pages → **Deploy from a branch** → `gh-pages` / `/ (root)` → push this fix → re-run workflow.
+
+**Files:** `.github/workflows/deploy-pages.yml`, `vite.config.ts`, `docs/Resume/Resume.md`, `public/sitemap.xml`, docs
+
+---
 
 ### 2026-08-03 — GitHub Pages deploy setup
 
