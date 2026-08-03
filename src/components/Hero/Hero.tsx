@@ -1,7 +1,7 @@
 import { basics, summary } from '../../data/resume'
 import { BTN_PRIMARY_CLASS, getResumePdfHref } from '../../constants'
 import { isUsableSocialUrl } from '../../utils/socialLinks'
-import { ProfilePhoto, Reveal } from '../Common'
+import { ProfilePhoto, ImmediateJoinerBadge, Reveal } from '../Common'
 
 export function Hero() {
   const pdfHref = getResumePdfHref(basics?.pdfPath)
@@ -13,8 +13,9 @@ export function Hero() {
       className="relative overflow-hidden border-b border-line bg-atmosphere"
     >
       <div className="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center gap-10 px-4 py-14 sm:px-5 sm:py-20 md:min-h-[72vh] md:flex-row md:items-center md:gap-12 lg:gap-16">
-        <Reveal delay={0.04} className="order-1 mx-auto shrink-0 md:order-2 md:mx-0">
+        <Reveal delay={0.04} className="order-1 mx-auto flex shrink-0 flex-col items-center gap-3 md:order-2 md:mx-0">
           <ProfilePhoto size="hero" />
+          <ImmediateJoinerBadge />
         </Reveal>
         <Reveal className="order-2 flex max-w-2xl flex-col gap-6 sm:gap-8 md:order-1">
           <p className="font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl md:text-6xl lg:text-7xl">

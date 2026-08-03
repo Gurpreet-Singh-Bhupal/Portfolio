@@ -165,15 +165,16 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 | Folder / file | Purpose |
 |---------------|---------|
 | `Navbar` | Sticky header, section links, **FontToggle**, **ThemeToggle**, mobile **Menu** (below `lg`) |
-| `Hero` | Brand name, title, summary, CTAs + `ProfilePhoto` in intro + `Reveal` |
+| `Hero` | Brand name, title, summary, CTAs + `ProfilePhoto` + **Immediate joiner** badge + `Reveal` |
 | `About` | About copy, years, location, interests, highlights, certifications (no photo) |
 | `Skills` | Skill **groups + tags** (no progress bars) |
-| `Experience` | Timeline with nested job projects from resume |
+| `Experience` | Timeline with nested job projects; ▸ bullets with spacing between items |
 | `Projects` | Portfolio project list from resume; GitHub/Live links only when `isUsableSocialUrl` passes |
 | `Resume` | Download + Open PDF + education list |
 | `Contact` | Validated form → EmailJS; mailto/phone/LinkedIn fallbacks |
 | `Footer` | Social links + copyright + back to top |
-| `Common/ProfilePhoto.tsx` | Icon placeholder; click to upload/change photo |
+| `Common/ImmediateJoinerBadge.tsx` | Green “Immediate joiner” pill under hero photo |
+| `Common/ProfilePhoto.tsx` | Clickable profile photo; upload or `photoPath` from Resume.md |
 | `Common/ThemeToggle.tsx` | Day/night switch button |
 | `Common/FontToggle.tsx` | Button “Change font”; hover shows current font name; tooltip “Change font” |
 | `Common/Reveal.tsx` | Framer Motion while-in-view fade/slide (a11y-aware) |

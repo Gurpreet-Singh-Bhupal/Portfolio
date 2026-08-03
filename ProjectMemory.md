@@ -37,6 +37,16 @@ Living memory of this portfolio project.
 
 ## Change log
 
+### 2026-08-03 — Immediate joiner badge + experience bullet spacing
+
+**What:** Green “Immediate joiner” pill below hero profile photo. Experience responsibility/achievement lists use ▸ markers with flex alignment and `space-y-3` gaps (reference-style breaks between bullets).
+
+**Why:** User reference portfolio (Shubham) — availability badge + cleaner bullet layout.
+
+**Files:** `src/components/Common/ImmediateJoinerBadge.tsx`, `Hero.tsx`, `Experience.tsx`, `Common/index.ts`, `ReadmeProject.md`, `ProjectMemory.md`
+
+---
+
 ### 2026-08-03 — Fix GitHub Pages deploy 404
 
 **What:** Deploy workflow switched to `peaceiris/actions-gh-pages` (pushes `gh-pages` branch). Vite `base` and live URLs updated to `/Portfolio/` (repo name casing).

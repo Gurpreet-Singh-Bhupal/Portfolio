@@ -1,3 +1,4 @@
+export { ImmediateJoinerBadge } from './ImmediateJoinerBadge'
 export { ProfilePhoto } from './ProfilePhoto'
 export { Reveal } from './Reveal'
 export { ThemeToggle } from './ThemeToggle'

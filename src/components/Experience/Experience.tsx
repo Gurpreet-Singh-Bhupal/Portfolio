@@ -45,9 +45,20 @@ export function Experience() {
                           </p>
                         ) : null}
                         {project.responsibilities?.length > 0 ? (
-                          <ul className="mt-3 list-disc space-y-1.5 pl-5 text-base font-medium leading-relaxed text-ink/80">
+                          <ul className="mt-4 space-y-3 sm:space-y-3.5" role="list">
                             {project.responsibilities.map((item) => (
-                              <li key={item}>{item}</li>
+                              <li
+                                key={item}
+                                className="flex gap-3 text-base font-medium leading-relaxed text-ink/85 sm:text-[1.05rem]"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  className="mt-[0.35rem] shrink-0 text-sm font-bold leading-none text-accent"
+                                >
+                                  ▸
+                                </span>
+                                <span className="min-w-0 flex-1">{item}</span>
+                              </li>
                             ))}
                           </ul>
                         ) : null}
@@ -67,11 +78,22 @@ export function Experience() {
                           </ul>
                         ) : null}
                         {project.achievements?.length > 0 ? (
-                          <ul className="mt-3 space-y-1 text-base font-semibold text-ink">
+                          <ul className="mt-4 space-y-3" role="list">
                             {project.achievements.map((item) => (
-                              <li key={item}>
-                                <span className="text-accent">Achievement: </span>
-                                {item}
+                              <li
+                                key={item}
+                                className="flex gap-3 text-base font-semibold text-ink"
+                              >
+                                <span
+                                  aria-hidden="true"
+                                  className="mt-[0.35rem] shrink-0 text-sm font-bold leading-none text-accent"
+                                >
+                                  ▸
+                                </span>
+                                <span className="min-w-0 flex-1">
+                                  <span className="text-accent">Achievement: </span>
+                                  {item}
+                                </span>
                               </li>
                             ))}
                           </ul>
