@@ -14,28 +14,34 @@ Living memory of this portfolio project.
 
 ---
 
-## Current project snapshot (as of 2026-08-01)
+## Current project snapshot (as of 2026-08-03)
 
 | Area | Status |
 |------|--------|
-| Stack | React 18 + Vite 5 + TypeScript + Tailwind CSS |
-| Theme | Gold/yellow accent; day/night toggle + **font cycle** (Professional / Times / Lucida) |
-| App UI | Full sections + click-to-upload profile photo + mobile Menu + Reveal animations |
-| Social | LinkedIn + GitHub from Resume.md frontmatter; project GitHub aligned |
-| Content | Driven by real `docs/Resume/Resume.md` (parser matches your heading format) |
-| Resume PDF | `public/GurpreetSinghResume_Tech_new2026.pdf` (Download / Open working) |
-| Profile photo | Icon placeholder → click upload (localStorage); optional `photoPath` in Resume.md |
-| Responsive | Tuned for mobile / tablet / laptop (mobile Menu below lg, fluid type/spacing) |
-| Motion | Framer Motion `Reveal` (respects `prefers-reduced-motion`) |
-| Contact | EmailJS parked; **Send via email app** (mailto) + **Open in Gmail** (Chrome) |
-| Routing | None (section IDs + smooth scroll) — Router postponed |
-| SEO | Basic meta/OG in `index.html` + `robots.txt` / `sitemap.xml` |
-| Deployment | **GitHub Pages** — workflow publishes `gh-pages` branch; URL `https://Gurpreet-Singh-Bhupal.github.io/Portfolio/` |
-| Docs | Architecture, Resume guide, `README.md`, `ReadmeProject.md`, `ProjectMemory.md` |
+| Stack | React 18 + Vite 5 + TypeScript + Tailwind CSS + Framer Motion |
+| Theme | Gold/yellow accent; day/night toggle + font cycle (Professional / Times / Lucida) |
+| App UI | Full sections; Hero photo only; **Immediate joiner** badge; mobile Menu; Reveal animations |
+| Social | LinkedIn + GitHub from Resume.md; project GitHub + Live URL on GitHub Pages |
+| Content | `docs/Resume/Resume.md` (incl. Vodafone Romania synced from latest PDF) |
+| Resume PDF | `public/GurpreetSinghResume_Tech_new2026.pdf` |
+| Profile photo | `photoPath: /pssprt.jpg` in Hero; click-upload optional (localStorage) |
+| Experience UI | Timeline with line gaps at dots; `ExperienceBulletList` (round markers + row dividers) |
+| Contact | EmailJS parked; mailto + Open in Gmail; body = **message only**; help box hidden |
+| Hosting | GitHub Pages via `gh-pages` branch → `https://Gurpreet-Singh-Bhupal.github.io/Portfolio/` |
+| Git | Repo `Gurpreet-Singh-Bhupal/Portfolio` (private OK); push needs PAT with `repo` + `workflow` |
+| Docs | `ReadmeProject.md`, `ProjectMemory.md`, `docs/Resume/README.md`, architecture doc |
 
 ---
 
 ## Change log
+
+### 2026-08-03 — Docs snapshot refresh (ReadmeProject + ProjectMemory)
+
+**What:** Updated current snapshot tables and stale ReadmeProject entries (timeline, bullets, contact, photo, PDF, deploy, gitignore).
+
+**Files:** `ReadmeProject.md`, `ProjectMemory.md`
+
+---
 
 ### 2026-08-03 — Vodafone Romania synced from latest PDF resume
 

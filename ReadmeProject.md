@@ -13,10 +13,10 @@ Update this file whenever code structure, files, or responsibilities change.
 | Goal | SaaS-quality personal portfolio (single-page scroll) |
 | Content source | `docs/Resume/Resume.md` (parsed into typed data) |
 | Resume PDF | `public/GurpreetSinghResume_Tech_new2026.pdf` (via `pdfPath`) |
-| Profile photo | Click circle to upload (localStorage) or set `photoPath` in Resume.md |
-| Theme | Gold/yellow accent; day/night toggle + font cycle button |
-| Social | LinkedIn + GitHub from Resume.md; project GitHub link; Live URL when deployed |
-| Contact | EmailJS parked; mailto + Open in Gmail |
+| Social | LinkedIn + GitHub; Live URL `https://Gurpreet-Singh-Bhupal.github.io/Portfolio/` |
+| Profile photo | Hero only — `public/pssprt.jpg` via `photoPath`; optional click-upload |
+| Theme | Gold/yellow accent; day/night toggle + font cycle |
+| Contact | EmailJS parked; mailto + Open in Gmail; email body = message only |
 | Hosting | GitHub Pages at `https://Gurpreet-Singh-Bhupal.github.io/Portfolio/` |
 | Entry URL | `npm run dev` → usually `http://localhost:5173` |
 
@@ -47,7 +47,7 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 - Dev deps include Tailwind CSS 3, PostCSS, Autoprefixer.
 
 ### `vite.config.ts`
-- Vite + React plugin.
+- Dev: `base: '/'`. Production: `base: '/Portfolio/'` for GitHub Pages project site.
 
 ### `tailwind.config.js`
 - Scans `index.html` + `src/**/*`.
@@ -63,7 +63,7 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 - Linting rules for TypeScript/React.
 
 ### `.gitignore`
-- Ignores `node_modules`, `dist`, `.env`, local env files.
+- Ignores `node_modules`, `dist`, `.env`, `.history`, `.cursor/fuse-overlay/`.
 
 ### `.env.example`
 - Template for EmailJS public config vars (`VITE_EMAILJS_*`).
@@ -99,7 +99,10 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 ## `public/`
 
 ### `public/GurpreetSinghResume_Tech_new2026.pdf`
-- Real downloadable resume PDF (referenced by `pdfPath` in `Resume.md`).
+- Downloadable resume PDF (referenced by `pdfPath` in `Resume.md`).
+
+### `public/pssprt.jpg`
+- Profile photo served at `/pssprt.jpg` (Hero via `photoPath`).
 
 ### `public/robots.txt` / `public/sitemap.xml`
 - Basic SEO crawl hints for a Vite SPA.
@@ -140,7 +143,7 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 
 ### `src/constants/nav.ts`
 - `NAV_ITEMS` — section anchors.
-- `getResumePdfHref(pdfPath?)` — safe PDF URL helper (optional chaining / fallback).
+- `getResumePdfHref(pdfPath?)` — PDF URL via `publicAssetUrl()`.
 
 ### `src/constants/theme.ts`
 - `THEME` — token name list.
@@ -168,10 +171,10 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 | `Hero` | Brand name, title, summary, CTAs + `ProfilePhoto` + **Immediate joiner** badge + `Reveal` |
 | `About` | About copy, years, location, interests, highlights, certifications (no photo) |
 | `Skills` | Skill **groups + tags** (no progress bars) |
-| `Experience` | Timeline + `ExperienceBulletList` (grid-aligned ▸ bullets, row spacing) |
-| `Projects` | Portfolio project list from resume; GitHub/Live links only when `isUsableSocialUrl` passes |
+| `Experience` | Per-job timeline (line gaps at dots) + `ExperienceBulletList` (round markers, row dividers) |
+| `Projects` | Project cards; GitHub/Live via `isUsableSocialUrl` |
 | `Resume` | Download + Open PDF + education list |
-| `Contact` | Validated form → EmailJS; mailto/phone/LinkedIn fallbacks |
+| `Contact` | Form → mailto or Gmail; message-only body; no left-column help box |
 | `Footer` | Social links + copyright + back to top |
 | `Common/ImmediateJoinerBadge.tsx` | Green “Immediate joiner” pill under hero photo |
 | `Common/ProfilePhoto.tsx` | Clickable profile photo; upload or `photoPath` from Resume.md |
@@ -184,7 +187,10 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 - Applies `data-font` on `<html>` and persists in `localStorage`.
 
 ### `src/utils/publicAssetUrl.ts`
-- Prefixes `import.meta.env.BASE_URL` for public assets (PDF, photo) so paths work on GitHub Pages (`/portfolio/...`).
+- Prefixes `import.meta.env.BASE_URL` for public assets (PDF, photo) on GitHub Pages (`/Portfolio/...`).
+
+### `src/components/Experience/ExperienceBulletList.tsx`
+- Responsibility/achievement lists: fixed left marker column, `py-4` spacing, divider between rows.
 
 ### `src/utils/socialLinks.ts`
 - `isUsableSocialUrl` — hides incomplete GitHub/LinkedIn/placeholder URLs.
@@ -200,10 +206,8 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 **Option B:** click the circle on Hero → choose an image (saved in this browser only).
 
 ### `.github/workflows/deploy-pages.yml`
-- On push to `main`: `npm ci` → `npm run build` → publish `dist/` to **`gh-pages`** branch (peaceiris action).
-
-### `vite.config.ts`
-- Dev: `base: '/'`. Production build: `base: '/Portfolio/'` (matches repo name on GitHub).
+- On push to `main`: `npm ci` → `npm run build` → peaceiris publishes `dist/` to **`gh-pages`** branch.
+- GitHub **Settings → Pages → Deploy from branch → gh-pages / root**.
 
 ### `src/assets/`
 - Optional bundled images (prefer click-upload or `public/` for profile photo).
