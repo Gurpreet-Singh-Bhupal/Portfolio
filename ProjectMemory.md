@@ -30,12 +30,24 @@ Living memory of this portfolio project.
 | Contact | EmailJS parked; **Send via email app** (mailto) + **Open in Gmail** (Chrome) |
 | Routing | None (section IDs + smooth scroll) — Router postponed |
 | SEO | Basic meta/OG in `index.html` + `robots.txt` / `sitemap.xml` |
-| Deployment | Guide given: push to GitHub first; **Vercel recommended** (static Vite SPA). Git not init yet in workspace. |
+| Deployment | **GitHub Pages** — Actions workflow; URL `https://Gurpreet-Singh-Bhupal.github.io/portfolio/` |
 | Docs | Architecture, Resume guide, `README.md`, `ReadmeProject.md`, `ProjectMemory.md` |
 
 ---
 
 ## Change log
+
+### 2026-08-03 — GitHub Pages deploy setup
+
+**What:** Vite `base: /portfolio/` for production build; `publicAssetUrl()` for PDF/photo paths; GitHub Actions workflow `.github/workflows/deploy-pages.yml`; Live URL in Resume.md + sitemap.
+
+**Why:** User chose GitHub Pages over Vercel — static site fits; repo already on GitHub.
+
+**Files:** `vite.config.ts`, `src/utils/publicAssetUrl.ts`, `src/constants/nav.ts`, `src/hooks/useProfilePhoto.ts`, `.github/workflows/deploy-pages.yml`, `docs/Resume/Resume.md`, `public/sitemap.xml`, `ProjectMemory.md`, `ReadmeProject.md`
+
+**User action:** Repo → Settings → Pages → Source: **GitHub Actions**; push this commit; wait for Actions green check.
+
+---
 
 ### 2026-08-03 — Git remote `origin` added (push needs user auth)
 

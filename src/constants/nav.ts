@@ -1,3 +1,5 @@
+import { publicAssetUrl } from '../utils/publicAssetUrl'
+
 export type NavItem = {
   id: string
   label: string
@@ -15,10 +17,10 @@ export const NAV_ITEMS: NavItem[] = [
 ]
 
 /** Fallback if `pdfPath` is missing from Resume frontmatter. */
-export const RESUME_PDF_HREF = '/GurpreetSinghResume_Tech_new2026.pdf'
+export const RESUME_PDF_HREF = publicAssetUrl('/GurpreetSinghResume_Tech_new2026.pdf')
 
 /** Prefer resume frontmatter `pdfPath`; fall back to default public PDF. */
 export function getResumePdfHref(pdfPath?: string | null): string {
   const path = pdfPath?.trim()
-  return path && path.length > 0 ? path : RESUME_PDF_HREF
+  return path && path.length > 0 ? publicAssetUrl(path) : RESUME_PDF_HREF
 }

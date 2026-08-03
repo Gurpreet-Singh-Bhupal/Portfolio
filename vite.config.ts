@@ -1,7 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
-export default defineConfig({
+// GitHub Pages project site: https://<user>.github.io/portfolio/
+const REPO_BASE = '/portfolio/'
+
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? REPO_BASE : '/',
   plugins: [react()],
-})
+}))

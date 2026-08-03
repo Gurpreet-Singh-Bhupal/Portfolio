@@ -16,7 +16,8 @@ Update this file whenever code structure, files, or responsibilities change.
 | Profile photo | Click circle to upload (localStorage) or set `photoPath` in Resume.md |
 | Theme | Gold/yellow accent; day/night toggle + font cycle button |
 | Social | LinkedIn + GitHub from Resume.md; project GitHub link; Live URL when deployed |
-| Contact | EmailJS → your Gmail (keys in `.env`) |
+| Contact | EmailJS parked; mailto + Open in Gmail |
+| Hosting | GitHub Pages at `https://Gurpreet-Singh-Bhupal.github.io/portfolio/` |
 | Entry URL | `npm run dev` → usually `http://localhost:5173` |
 
 ---
@@ -181,6 +182,9 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 - Font options: Professional (Resume default), Times New Roman, Lucida Handwriting.
 - Applies `data-font` on `<html>` and persists in `localStorage`.
 
+### `src/utils/publicAssetUrl.ts`
+- Prefixes `import.meta.env.BASE_URL` for public assets (PDF, photo) so paths work on GitHub Pages (`/portfolio/...`).
+
 ### `src/utils/socialLinks.ts`
 - `isUsableSocialUrl` — hides incomplete GitHub/LinkedIn/placeholder URLs.
 
@@ -192,8 +196,13 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 ### How to add your profile photo
 **Option A (easiest):** put image in `public/` and set `photoPath` in Resume.md (e.g. `/pssprt.jpg`).
 
-**Option B:** click the circle on Hero → choose an image (saved in this browser only).  
-**Option B:** put a file in `public/` and set `photoPath: /your-file.jpg` in `Resume.md`.
+**Option B:** click the circle on Hero → choose an image (saved in this browser only).
+
+### `.github/workflows/deploy-pages.yml`
+- On push to `main`: `npm ci` → `npm run build` → deploy `dist/` to GitHub Pages.
+
+### `vite.config.ts`
+- Dev: `base: '/'`. Production build: `base: '/portfolio/'` for GitHub Pages project site.
 
 ### `src/assets/`
 - Optional bundled images (prefer click-upload or `public/` for profile photo).

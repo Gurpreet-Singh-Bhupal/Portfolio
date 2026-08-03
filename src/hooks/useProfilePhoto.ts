@@ -6,6 +6,7 @@ import {
   onPhotoChange,
   saveUploadedPhoto,
 } from '../utils/profilePhotoStorage'
+import { publicAssetUrl } from '../utils/publicAssetUrl'
 
 function readFileAsDataUrl(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -25,7 +26,7 @@ function readFileAsDataUrl(file: File): Promise<string> {
  * Upload is client-side only (no server); Hero uses the shared photo state.
  */
 export function useProfilePhoto() {
-  const resumePath = basics.photoPath?.trim() || ''
+  const resumePath = publicAssetUrl(basics.photoPath?.trim() || '')
   const [uploaded, setUploaded] = useState<string | null>(() => getUploadedPhoto())
   const [brokenPath, setBrokenPath] = useState(false)
 

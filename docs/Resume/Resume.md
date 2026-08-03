@@ -324,7 +324,7 @@ https://github.com/Gurpreet-Singh-Bhupal/portfolio
 
 Live
 
-https://YOUR_PORTFOLIO.vercel.app
+https://Gurpreet-Singh-Bhupal.github.io/portfolio/
 
 ---
 
