@@ -1,0 +1,34 @@
+---
+description: Portfolio docs memory + safe change rules for this workspace
+alwaysApply: true
+---
+
+# Portfolio docs — update every prompt
+
+In this workspace, treat these two files as mandatory session memory:
+
+1. `ReadmeProject.md` — developer guide: what each file / function / code block is for
+2. `ProjectMemory.md` — Cursor / AI chronological memory of every change (handoff across chats)
+
+## Required docs behavior
+
+- At the start of work that touches this project, read `ProjectMemory.md` (and `ReadmeProject.md` when structure matters).
+- On **every prompt** that results in any project change (code, config, content, docs, or decisions), update both files before finishing:
+  - `ReadmeProject.md` — refresh purpose notes for any added/changed/removed files, functions, or code blocks so a developer can understand the project
+  - `ProjectMemory.md` — add a dated entry at the top of the change log (what / why / files) so later sessions (even in another directory/chat) know history
+- If the prompt only asks a question and no files change, still add a short note in `ProjectMemory.md` only when a useful decision or clarification was made; otherwise skip.
+- Keep wording simple so the user can explain the project to others.
+- Do not skip these updates even for small changes.
+
+---
+
+# Safe change rules (non-negotiable)
+
+When editing this portfolio codebase:
+
+1. **Do not hamper existing developer code** — preserve working behavior and structure unless the task explicitly requires a change.
+2. **Change only what the scenario needs** — keep existing flows intact; avoid drive-by refactors or unrelated edits.
+3. **Avoid environment-breaking changes** — do not assume env vars, browser APIs, or optional data always exist; use optional chaining (`?.`) and safe fallbacks when values may be missing.
+4. **Prefer minimal, reused code** — before adding logic, check whether the same helper/pattern already exists and reuse it; avoid duplicate blocks.
+5. **Keep ESLint clean for builds** — fix lint issues introduced by your changes so `npm run build` / lint do not fail.
+6. **Always update docs as above** — `ReadmeProject.md` (developer understanding) and `ProjectMemory.md` (Cursor memory / change history).

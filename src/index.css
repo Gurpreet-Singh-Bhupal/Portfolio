@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Theme tokens only here. Layout/UI styling uses Tailwind utilities in components.
+  Light = :root, dark = html.dark (toggled via ThemeToggle / system preference on first load).
+*/
+:root {
+  --color-canvas: #f7f5ef;
+  --color-surface: #fffcf7;
+  --color-ink: #1a1710;
+  --color-muted: #3f3a30;
+  --color-accent: #b8860b;
+  --color-on-accent: #1a1710;
+  --color-accent-soft: #f3e6c0;
+  --color-line: #e2d9c4;
+  --shadow-soft: 0 18px 40px rgba(26, 23, 16, 0.08);
+  --bg-atmosphere: radial-gradient(1100px 560px at 12% -8%, rgba(184, 134, 11, 0.16) 0%, transparent 55%),
+    radial-gradient(900px 480px at 92% 0%, rgba(226, 217, 196, 0.55) 0%, transparent 50%),
+    linear-gradient(180deg, #f3efe4 0%, #f7f5ef 45%, #faf8f3 100%);
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Sora', system-ui, sans-serif;
+  color-scheme: light;
+}
+
+/* Font presets (toggled via data-font on <html>) */
+html[data-font='professional'],
+html:not([data-font]) {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Sora', system-ui, sans-serif;
+}
+
+html[data-font='times'] {
+  --font-display: 'Times New Roman', Times, serif;
+  --font-sans: 'Times New Roman', Times, serif;
+}
+
+html[data-font='lucida'] {
+  --font-display: 'Lucida Handwriting', 'Segoe Script', cursive;
+  --font-sans: 'Lucida Handwriting', 'Segoe Script', cursive;
+  letter-spacing: 0.01em;
+}
+
+html.dark {
+  --color-canvas: #0c0b09;
+  --color-surface: #16140f;
+  --color-ink: #f3efe4;
+  --color-muted: #b0a792;
+  --color-accent: #d4a017;
+  --color-on-accent: #0c0b09;
+  --color-accent-soft: rgba(212, 160, 23, 0.16);
+  --color-line: rgba(212, 160, 23, 0.28);
+  --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.45);
+  --bg-atmosphere: radial-gradient(1000px 520px at 10% -10%, rgba(212, 160, 23, 0.14) 0%, transparent 55%),
+    radial-gradient(800px 420px at 90% 0%, rgba(212, 160, 23, 0.08) 0%, transparent 45%),
+    linear-gradient(180deg, #100e0a 0%, #0c0b09 50%, #0a0907 100%);
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply m-0 min-h-screen min-w-[320px] bg-canvas font-sans text-base font-medium leading-relaxed text-ink antialiased sm:text-lg;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-accent;
+  }
+}

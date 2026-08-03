@@ -1,0 +1,4 @@
+export { ProfilePhoto } from './ProfilePhoto'
+export { Reveal } from './Reveal'
+export { ThemeToggle } from './ThemeToggle'
+export { FontToggle } from './FontToggle'
