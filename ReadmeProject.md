@@ -168,7 +168,7 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 | `Hero` | Brand name, title, summary, CTAs + `ProfilePhoto` + **Immediate joiner** badge + `Reveal` |
 | `About` | About copy, years, location, interests, highlights, certifications (no photo) |
 | `Skills` | Skill **groups + tags** (no progress bars) |
-| `Experience` | Timeline with nested job projects; ▸ bullets with spacing between items |
+| `Experience` | Timeline + `ExperienceBulletList` (grid-aligned ▸ bullets, row spacing) |
 | `Projects` | Portfolio project list from resume; GitHub/Live links only when `isUsableSocialUrl` passes |
 | `Resume` | Download + Open PDF + education list |
 | `Contact` | Validated form → EmailJS; mailto/phone/LinkedIn fallbacks |
@@ -192,7 +192,7 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 ### `src/services/email.ts` (Contact)
 - Preferred inbox: `gurpreetOfficial0596@gmail.com` (fallback `gsingh5496@gmail.com`).
 - EmailJS path ready but **parked** (needs `.env` keys later).
-- Interim dual path: `mailto` (OS app picker / Outlook) and `buildGmailComposeUrl` (**Open in Gmail** for Chrome). Payload includes `subject` + body.
+- Interim dual path: `mailto` (OS app picker / Outlook) and `buildGmailComposeUrl` (**Open in Gmail**). Body contains **message text only** (subject + form fields carry name/email).
 
 ### How to add your profile photo
 **Option A (easiest):** put image in `public/` and set `photoPath` in Resume.md (e.g. `/pssprt.jpg`).

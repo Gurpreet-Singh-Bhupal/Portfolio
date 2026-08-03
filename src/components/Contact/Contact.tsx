@@ -3,7 +3,6 @@ import { basics } from '../../data/resume'
 import { BTN_PRIMARY_CLASS } from '../../constants'
 import {
   getPreferredContactEmail,
-  isEmailJsConfigured,
   sendContactEmail,
   type ContactSendChannel,
 } from '../../services/email'
@@ -27,7 +26,6 @@ export function Contact() {
   const [form, setForm] = useState<FormState>(initialForm)
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
   const [feedback, setFeedback] = useState('')
-  const configured = isEmailJsConfigured()
   const preferredInbox = getPreferredContactEmail()
   const emails =
     basics?.emails?.length > 0
@@ -71,13 +69,9 @@ export function Contact() {
     if (result.ok) {
       setStatus('success')
       if (result.method === 'mailto') {
-        setFeedback(
-          `System email-app picker opened. Prefer Outlook for compose. Chrome usually does not open Gmail from that list — use “Open in Gmail” below instead.`,
-        )
+        setFeedback('Email app opened — complete and send your message there.')
       } else if (result.method === 'gmail') {
-        setFeedback(
-          `Gmail compose opened for ${preferredInbox} with Subject and message filled. Sign in if needed, then click Send.`,
-        )
+        setFeedback('Gmail compose opened — sign in if needed, then click Send.')
       } else {
         setFeedback('Message sent. Thank you — I will get back to you soon.')
         setForm(initialForm)
@@ -155,17 +149,6 @@ export function Contact() {
               </p>
             ) : null}
           </div>
-          {!configured ? (
-            <p
-              className="mt-6 rounded-md border border-line bg-canvas px-3 py-3 text-sm font-medium text-ink/80 sm:text-base"
-              role="status"
-            >
-              <strong>Send via email app</strong> shows the Windows app picker (Outlook works best).{' '}
-              <strong>Open in Gmail</strong> opens Gmail compose in Chrome with To, Subject, and body
-              filled — use this if you want Gmail in the browser (Chrome in the mailto picker usually
-              does not open Gmail).
-            </p>
-          ) : null}
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4" noValidate>

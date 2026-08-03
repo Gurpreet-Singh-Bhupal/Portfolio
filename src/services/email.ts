@@ -44,32 +44,23 @@ export function isEmailJsConfigured(): boolean {
 }
 
 function buildMessageBody(payload: ContactPayload): string {
-  return `Name: ${payload.fromName}\nFrom email: ${payload.fromEmail}\n\n${payload.message}`
+  return payload.message?.trim() ?? ''
 }
 
 /** mailto: → OS “Select an app” picker (Outlook etc.). Chrome usually will NOT open Gmail from this. */
 export function buildContactMailto(payload: ContactPayload, toEmail?: string): string {
   const to = toEmail?.trim() || getPreferredContactEmail()
   const subject = payload.subject?.trim() || `Portfolio contact from ${payload.fromName}`
-  const params = new URLSearchParams({
-    subject,
-    body: buildMessageBody(payload),
-  })
-  return `mailto:${to}?${params.toString()}`
+  const body = buildMessageBody(payload)
+  return `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 }
 
 /** Gmail web compose — use this when the visitor wants Gmail in the browser (Chrome). */
 export function buildGmailComposeUrl(payload: ContactPayload, toEmail?: string): string {
   const to = toEmail?.trim() || getPreferredContactEmail()
   const subject = payload.subject?.trim() || `Portfolio contact from ${payload.fromName}`
-  const params = new URLSearchParams({
-    view: 'cm',
-    fs: '1',
-    to,
-    su: subject,
-    body: buildMessageBody(payload),
-  })
-  return `https://mail.google.com/mail/?${params.toString()}`
+  const body = buildMessageBody(payload)
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 }
 
 /**

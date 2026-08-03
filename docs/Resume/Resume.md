@@ -117,16 +117,16 @@ Technologies
 
 Description
 
-Worked on Vodafone Romania Retail Portal used by retail stores for creating orders for fixed and mobile services.
+Worked on Vodafone Romania's enterprise retail platform, enabling store representatives to manage customer orders for mobile services, broadband, TV, and fixed-line products. Over the past 1 year 3 months, gained strong telecom domain knowledge of telecom order management, customer onboarding, product catalog, and service provisioning while developing scalable React-based applications.
 
 Responsibilities
 
-- Developed retail ordering system.
-- Built internal Simulator UI tool.
-- Connected application with SSH.
-- Reduced testing team's manual effort.
-- Enabled testers to manipulate server data from one interface.
-- Collaborated with QA team.
+- Developed retail ordering flows for mobile, broadband, TV, and fixed-line products on the enterprise retail platform.
+- Built scalable React-based applications for store representatives across order management and service provisioning.
+- Applied telecom domain knowledge to customer onboarding, product catalog, and telecom order workflows.
+- Built Simulator UI tool with SSH integration so testers could manage server data from one application.
+- Reduced manual effort and context switching for the QA team through unified testing tooling.
+- Collaborated with QA and cross-functional teams in an Agile delivery environment.
 
 Technologies
 
@@ -142,7 +142,7 @@ Technologies
 
 Achievements
 
-- Developed Simulator UI tool that significantly simplified tester workflows.
+- Built Simulator UI tool with SSH integration that enabled testers to manage server data from one application, improving productivity by reducing manual effort and context switching.
 
 ---
 

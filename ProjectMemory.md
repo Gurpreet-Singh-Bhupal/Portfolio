@@ -37,6 +37,48 @@ Living memory of this portfolio project.
 
 ## Change log
 
+### 2026-08-03 — Vodafone Romania synced from latest PDF resume
+
+**What:** Updated `docs/Resume/Resume.md` Vodafone project from `public/GurpreetSinghResume_Tech_new2026.pdf` — full enterprise retail + telecom domain description, expanded responsibilities, achievement text from PDF.
+
+**Files:** `docs/Resume/Resume.md`, `ProjectMemory.md`
+
+---
+
+### 2026-08-03 — Timeline line for last job + gaps at dots
+
+**What:** Line below dot now renders for **last** experience entry (Kantar). Added 0.5rem gap before/after each dot; dot moved to `top-3` for clearer line segments.
+
+**Files:** `Experience.tsx`, `ProjectMemory.md`
+
+---
+
+### 2026-08-03 — Experience timeline: line breaks at dots
+
+**What:** Timeline uses separate line segments above/below each dot on a fixed left axis; gap between jobs has no line; dot aligned on axis with canvas border.
+
+**Files:** `Experience.tsx`, `ProjectMemory.md`
+
+---
+
+### 2026-08-03 — Contact help hidden, bullets + timeline, new PDF
+
+**What:** Removed Contact left-column email-app help box. Experience bullets use round markers + `py-4` + divider lines; timeline is per-job (line breaks between roles). Renamed new resume PDF to `public/GurpreetSinghResume_Tech_new2026.pdf`. Vodafone Romania description wording updated in Resume.md.
+
+**Files:** `Contact.tsx`, `Experience.tsx`, `ExperienceBulletList.tsx`, `docs/Resume/Resume.md`, `public/GurpreetSinghResume_Tech_new2026.pdf`, docs
+
+---
+
+### 2026-08-03 — Experience bullets grid + email body message-only
+
+**What:** `ExperienceBulletList` — fixed 1.25rem marker column + `py-2.5` row gaps for aligned ▸ bullets. Contact mailto/Gmail body is **message only**; `encodeURIComponent` fixes `+` instead of spaces in Outlook.
+
+**Why:** Bullets still misaligned; email body should not repeat name/from (subject line covers context).
+
+**Files:** `ExperienceBulletList.tsx`, `Experience.tsx`, `email.ts`, `Contact.tsx`, docs
+
+---
+
 ### 2026-08-03 — Immediate joiner badge + experience bullet spacing
 
 **What:** Green “Immediate joiner” pill below hero profile photo. Experience responsibility/achievement lists use ▸ markers with flex alignment and `space-y-3` gaps (reference-style breaks between bullets).
