@@ -35,6 +35,22 @@ Living memory of this portfolio project.
 
 ## Change log
 
+### 2026-08-04 — Resume section: remove dev note + duplicate summary
+
+**What:** Removed PDF/sync helper text and repeated summary from `Resume.tsx` — section shows heading, Download/Open buttons, Education only.
+
+**Files:** `src/components/Resume/Resume.tsx`, `ProjectMemory.md`
+
+---
+
+### 2026-08-04 — Amdocs certificate + professional copy trim
+
+**What:** Added Amdocs VF-3 UK Certificate of Recognition (Certifications + Three UK achievement). Trimmed portfolio project blurb, Contact instructional text, button labels; removed “Achievement:” prefix; Recognition subheading for project awards.
+
+**Files:** `docs/Resume/Resume.md`, `Contact.tsx`, `Experience.tsx`, `ExperienceBulletList.tsx`, `ProjectMemory.md`, `ReadmeProject.md`
+
+---
+
 ### 2026-08-03 — Docs snapshot refresh (ReadmeProject + ProjectMemory)
 
 **What:** Updated current snapshot tables and stale ReadmeProject entries (timeline, bullets, contact, photo, PDF, deploy, gitignore).

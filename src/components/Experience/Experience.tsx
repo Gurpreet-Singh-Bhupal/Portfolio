@@ -87,7 +87,12 @@ export function Experience() {
                           </ul>
                         ) : null}
                         {project.achievements?.length > 0 ? (
-                          <ExperienceBulletList items={project.achievements} variant="achievement" />
+                          <div className="mt-5">
+                            <h5 className="text-sm font-semibold uppercase tracking-wide text-accent">
+                              Recognition
+                            </h5>
+                            <ExperienceBulletList items={project.achievements} className="mt-2" />
+                          </div>
                         ) : null}
                       </article>
                     ))}

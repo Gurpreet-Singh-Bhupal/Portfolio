@@ -68,13 +68,11 @@ export function Contact() {
 
     if (result.ok) {
       setStatus('success')
-      if (result.method === 'mailto') {
-        setFeedback('Email app opened — complete and send your message there.')
-      } else if (result.method === 'gmail') {
-        setFeedback('Gmail compose opened — sign in if needed, then click Send.')
-      } else {
-        setFeedback('Message sent. Thank you — I will get back to you soon.')
+      if (result.method === 'emailjs') {
+        setFeedback('Thank you — your message was sent.')
         setForm(initialForm)
+      } else {
+        setFeedback('')
       }
       return
     }
@@ -99,9 +97,8 @@ export function Contact() {
           <h2 id="contact-heading" className="font-display text-3xl font-semibold text-ink sm:text-4xl">
             Contact
           </h2>
-          <p className="mt-3 text-base font-medium leading-relaxed text-ink/80 sm:text-lg">
-            Fill your name, email (from), subject, and message. Preferred inbox:{' '}
-            <span className="font-semibold text-ink">{preferredInbox}</span>.
+          <p className="mt-3 text-base font-medium text-ink/80 sm:text-lg">
+            Open to opportunities — reach out via the form or links below.
           </p>
           <div className="mt-6 space-y-2 text-base">
             {emails.map((address) => (
@@ -212,7 +209,7 @@ export function Contact() {
           </div>
           <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap">
             <button type="submit" disabled={status === 'sending'} className={BTN_PRIMARY_CLASS}>
-              {status === 'sending' ? 'Opening…' : 'Send via email app'}
+              {status === 'sending' ? 'Sending…' : 'Send'}
             </button>
             <button
               type="button"
@@ -220,7 +217,7 @@ export function Contact() {
               onClick={() => void send('gmail')}
               className="rounded-md border border-accent bg-surface px-4 py-2.5 text-sm font-semibold text-ink transition hover:bg-accent-soft disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
             >
-              Open in Gmail
+              Gmail
             </button>
           </div>
           {feedback ? (

@@ -1,4 +1,4 @@
-import { basics, education, summary } from '../../data/resume'
+import { basics, education } from '../../data/resume'
 import { BTN_PRIMARY_CLASS, getResumePdfHref } from '../../constants'
 import { Reveal } from '../Common'
 
@@ -11,10 +11,6 @@ export function Resume() {
         <h2 id="resume-heading" className="font-display text-2xl font-semibold text-ink sm:text-3xl">
           Resume
         </h2>
-        <p className="mt-3 max-w-2xl text-sm text-muted sm:text-base">
-          Download or open the PDF. Site content stays in sync with `docs/Resume/Resume.md`.
-        </p>
-        <p className="mt-4 max-w-2xl text-sm text-muted">{summary}</p>
         <div className="mt-6 flex flex-wrap gap-3 sm:mt-8">
           <a href={pdfHref} download className={BTN_PRIMARY_CLASS}>
             Download Resume (PDF)

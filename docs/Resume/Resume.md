@@ -111,6 +111,10 @@ Technologies
 - Redux Saga
 - Tailwind CSS
 
+Achievements
+
+- Amdocs VF-3 UK Certificate of Recognition — redesigned eSIM selection from mandatory toggle to optional choice for the 3UK iPhone launch, delivered on time with high quality.
+
 ---
 
 ### Project: Vodafone Romania
@@ -261,10 +265,11 @@ Technologies
 
 # Certifications
 
+- VF-3 UK Certificate of Recognition (Amdocs — 3UK iPhone Launch)
+- Certificate of Appreciation (Coforge)
 - HTML/CSS Certification (Cutshort)
 - JavaScript Essentials (LetsUpgrade)
 - React.js Essentials (LetsUpgrade)
-- Certificate of Appreciation (Coforge)
 
 ---
 
@@ -308,7 +313,7 @@ Sri Sankara Vidyalaya
 
 Description
 
-A premium SaaS-inspired portfolio website built using React, TypeScript, Tailwind CSS, Framer Motion, and Vite. The website showcases my experience, skills, projects, certifications, and resume while demonstrating modern frontend engineering practices.
+Personal portfolio built with React, TypeScript, Tailwind CSS, Framer Motion, and Vite.
 
 Technologies
 
