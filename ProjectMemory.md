@@ -35,6 +35,16 @@ Living memory of this portfolio project.
 
 ## Change log
 
+### 2026-08-06 — Resume Summary & About: balance UI + AI skills
+
+**What:** Rewrote `# Summary` and `# About` in `docs/Resume/Resume.md` so each section reflects both frontend stack (React, TypeScript, Redux, component architecture) and recent AI/prompt-engineering work—not one at the expense of the other.
+
+**Why:** User wanted Summary to mention AI/prompt skills (not only UI stack) and About to retain UI depth while keeping AI/Java learning.
+
+**Files:** `docs/Resume/Resume.md`, `ProjectMemory.md`
+
+---
+
 ### 2026-08-04 — Resume section: remove dev note + duplicate summary
 
 **What:** Removed PDF/sync helper text and repeated summary from `Resume.tsx` — section shows heading, Download/Open buttons, Education only.

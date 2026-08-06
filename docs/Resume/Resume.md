@@ -15,13 +15,13 @@ photoPath: /pssprt.jpg
 
 # Summary
 
-Results-driven Senior Frontend Developer with 5+ years of experience in building scalable, high-performance web applications using React.js, Redux, JavaScript, and TypeScript. Passionate about solving complex UI challenges, developing reusable component architectures, and delivering user-centric applications with excellent performance and maintainability.
+Results-driven Senior Frontend Developer with 5+ years of experience building scalable, high-performance web applications using React.js, Redux, JavaScript, and TypeScript. Skilled in AI-assisted development and prompt engineering—applying modern tooling alongside strong UI expertise to solve complex frontend challenges, build reusable component architectures, and deliver user-centric applications with excellent performance and maintainability.
 
 ---
 
 # About
 
-I specialize in building scalable React applications with a strong focus on performance, clean architecture, and user experience. Throughout my career, I've worked on enterprise applications in telecom, healthcare, manufacturing, retail, and analytics domains. I enjoy solving complex frontend challenges, collaborating with cross-functional teams, and continuously learning modern technologies such as Prompt Engineering, AI-assisted development, and Java backend development.
+I specialize in building scalable React applications with a strong focus on performance, clean architecture, and user experience—using React.js, TypeScript, Redux, and reusable component-driven patterns. Throughout my career, I've delivered enterprise applications across telecom, healthcare, manufacturing, retail, and analytics domains. I enjoy solving complex frontend challenges and collaborating with cross-functional teams, while also applying AI-assisted development, prompt engineering, and Java backend skills to build robust, production-ready solutions.
 
 ---
 
