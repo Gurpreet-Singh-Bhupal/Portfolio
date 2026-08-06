@@ -23,7 +23,7 @@ Living memory of this portfolio project.
 | App UI | Full sections; Hero photo only; **Immediate joiner** badge; mobile Menu; Reveal animations |
 | Social | LinkedIn + GitHub from Resume.md; project GitHub + Live URL on GitHub Pages |
 | Content | `docs/Resume/Resume.md` (incl. Vodafone Romania synced from latest PDF) |
-| Resume PDF | `public/GurpreetSinghResume_Tech_new2026.pdf` |
+| Resume PDF | `public/GurpreetSingh_Resume_Tech_aug2026.pdf` |
 | Profile photo | `photoPath: /pssprt.jpg` in Hero; click-upload optional (localStorage) |
 | Experience UI | Timeline with line gaps at dots; `ExperienceBulletList` (round markers + row dividers) |
 | Contact | EmailJS parked; mailto + Open in Gmail; body = **message only**; help box hidden |
@@ -34,6 +34,16 @@ Living memory of this portfolio project.
 ---
 
 ## Change log
+
+### 2026-08-06 — Resume PDF: aug 2026 edition
+
+**What:** Replaced portfolio resume PDF with `public/GurpreetSingh_Resume_Tech_aug2026.pdf` (renamed from double `.pdf.pdf` upload). Updated `pdfPath` in `docs/Resume/Resume.md`, fallback in `src/constants/nav.ts`, and resume docs.
+
+**Why:** User added updated August 2026 resume PDF for Hero/Resume Download and Open links.
+
+**Files:** `public/GurpreetSingh_Resume_Tech_aug2026.pdf`, `docs/Resume/Resume.md`, `src/constants/nav.ts`, `docs/Resume/README.md`, `ReadmeProject.md`, `ProjectMemory.md`
+
+---
 
 ### 2026-08-06 — Resume Summary & About: balance UI + AI skills
 

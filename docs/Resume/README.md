@@ -34,7 +34,7 @@ location: Pune, Maharashtra, India
 linkedin: https://www.linkedin.com/in/...
 github: https://github.com/...
 yearsExperience: 5+
-pdfPath: /GurpreetSinghResume_Tech_new2026.pdf
+pdfPath: /GurpreetSingh_Resume_Tech_aug2026.pdf
 photoPath: /profile.jpg
 ```
 
@@ -78,7 +78,7 @@ Achievements
 ## 2. Update the PDF download
 
 1. Export your real resume as PDF.
-2. Place it at `public/GurpreetSinghResume_Tech_new2026.pdf` (or change `pdfPath` + filename together).
+2. Place it at `public/GurpreetSingh_Resume_Tech_aug2026.pdf` (or change `pdfPath` + filename together).
 3. Click **Download Resume** / **Open Resume** on the site to verify.
 
 ---

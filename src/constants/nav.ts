@@ -17,7 +17,7 @@ export const NAV_ITEMS: NavItem[] = [
 ]
 
 /** Fallback if `pdfPath` is missing from Resume frontmatter. */
-export const RESUME_PDF_HREF = publicAssetUrl('/GurpreetSinghResume_Tech_new2026.pdf')
+export const RESUME_PDF_HREF = publicAssetUrl('/GurpreetSingh_Resume_Tech_aug2026.pdf')
 
 /** Prefer resume frontmatter `pdfPath`; fall back to default public PDF. */
 export function getResumePdfHref(pdfPath?: string | null): string {

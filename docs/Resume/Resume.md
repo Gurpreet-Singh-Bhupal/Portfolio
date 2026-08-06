@@ -9,7 +9,7 @@ location: Pune, Maharashtra, India
 linkedin: https://www.linkedin.com/in/gurpreet-singh-bhupal-05041996gsb/
 github: https://github.com/Gurpreet-Singh-Bhupal
 yearsExperience: 5+
-pdfPath: /GurpreetSinghResume_Tech_new2026.pdf
+pdfPath: /GurpreetSingh_Resume_Tech_aug2026.pdf
 photoPath: /pssprt.jpg
 ---
 

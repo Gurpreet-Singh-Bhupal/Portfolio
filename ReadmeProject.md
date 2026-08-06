@@ -12,7 +12,7 @@ Update this file whenever code structure, files, or responsibilities change.
 | Stack | React 18 + Vite 5 + TypeScript + Tailwind CSS |
 | Goal | SaaS-quality personal portfolio (single-page scroll) |
 | Content source | `docs/Resume/Resume.md` (parsed into typed data) |
-| Resume PDF | `public/GurpreetSinghResume_Tech_new2026.pdf` (via `pdfPath`) |
+| Resume PDF | `public/GurpreetSingh_Resume_Tech_aug2026.pdf` (via `pdfPath`) |
 | Social | LinkedIn + GitHub; Live URL `https://Gurpreet-Singh-Bhupal.github.io/Portfolio/` |
 | Profile photo | Hero only — `public/pssprt.jpg` via `photoPath`; optional click-upload |
 | Theme | Gold/yellow accent; day/night toggle + font cycle |
@@ -98,7 +98,7 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 
 ## `public/`
 
-### `public/GurpreetSinghResume_Tech_new2026.pdf`
+### `public/GurpreetSingh_Resume_Tech_aug2026.pdf`
 - Downloadable resume PDF (referenced by `pdfPath` in `Resume.md`).
 
 ### `public/pssprt.jpg`
