@@ -8,14 +8,14 @@ phone:
 location: Pune, Maharashtra, India
 linkedin: https://www.linkedin.com/in/gurpreet-singh-bhupal-05041996gsb/
 github: https://github.com/Gurpreet-Singh-Bhupal
-yearsExperience: 5+
+yearsExperience: 6+
 pdfPath: /GurpreetSingh_Resume_Tech_aug2026.pdf
 photoPath: /pssprt.jpg
 ---
 
 # Summary
 
-Results-driven Senior Frontend Developer with 5+ years of experience building scalable, high-performance web applications using React.js, Redux, JavaScript, and TypeScript. Skilled in AI-assisted development and prompt engineering—applying modern tooling alongside strong UI expertise to solve complex frontend challenges, build reusable component architectures, and deliver user-centric applications with excellent performance and maintainability.
+Results-driven Senior Frontend Developer with 6+ years of experience building scalable, high-performance web applications using React.js, Redux, JavaScript, and TypeScript. Skilled in AI-assisted development and prompt engineering—applying modern tooling alongside strong UI expertise to solve complex frontend challenges, build reusable component architectures, and deliver user-centric applications with excellent performance and maintainability.
 
 ---
 

@@ -33,7 +33,7 @@ phone:
 location: Pune, Maharashtra, India
 linkedin: https://www.linkedin.com/in/...
 github: https://github.com/...
-yearsExperience: 5+
+yearsExperience: 6+
 pdfPath: /GurpreetSingh_Resume_Tech_aug2026.pdf
 photoPath: /profile.jpg
 ```

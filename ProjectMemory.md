@@ -35,6 +35,16 @@ Living memory of this portfolio project.
 
 ## Change log
 
+### 2026-08-09 — Resume: 6+ years experience
+
+**What:** Updated Summary copy in `docs/Resume/Resume.md` from 5+ to 6+ years; frontmatter `yearsExperience: 6+` drives About badge (“6+ years experience”).
+
+**Why:** User requested experience count reflect 6+ years across the portfolio.
+
+**Files:** `docs/Resume/Resume.md`, `docs/Resume/README.md`, `ProjectMemory.md`
+
+---
+
 ### 2026-08-06 — Resume PDF: aug 2026 edition
 
 **What:** Replaced portfolio resume PDF with `public/GurpreetSingh_Resume_Tech_aug2026.pdf` (renamed from double `.pdf.pdf` upload). Updated `pdfPath` in `docs/Resume/Resume.md`, fallback in `src/constants/nav.ts`, and resume docs.
