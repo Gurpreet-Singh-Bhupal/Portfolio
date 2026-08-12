@@ -94,6 +94,11 @@ Documented in `src/PORTFOLIO_ARCHITECTURE.md`:
 ### `docs/Resume/README.md`
 - How to edit resume content, PDF filename/`pdfPath`, and EmailJS → Gmail.
 
+### `docs/Java-Udemy-Study-Plan.md`
+- Personal learning guide for the in28minutes Udemy Java course (not used by the portfolio app).
+- Covers recommended vs full study path, daily routines, time estimates at 2/3/4 hrs per day, week-by-week schedules, all 62 sections with durations, progress checklist, and study tips.
+- Link: [Java Programming Tutorial for Beginners](https://www.udemy.com/course/java-programming-tutorial-for-beginners/)
+
 ---
 
 ## `public/`

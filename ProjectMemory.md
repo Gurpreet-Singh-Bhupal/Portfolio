@@ -29,11 +29,21 @@ Living memory of this portfolio project.
 | Contact | EmailJS parked; mailto + Open in Gmail; body = **message only**; help box hidden |
 | Hosting | GitHub Pages via `gh-pages` branch → `https://Gurpreet-Singh-Bhupal.github.io/Portfolio/` |
 | Git | Repo `Gurpreet-Singh-Bhupal/Portfolio` (private OK); push needs PAT with `repo` + `workflow` |
-| Docs | `ReadmeProject.md`, `ProjectMemory.md`, `docs/Resume/README.md`, architecture doc |
+| Docs | `ReadmeProject.md`, `ProjectMemory.md`, `docs/Resume/README.md`, `docs/Java-Udemy-Study-Plan.md`, architecture doc |
 
 ---
 
 ## Change log
+
+### 2026-08-12 — Java Udemy course study plan doc
+
+**What:** Added `docs/Java-Udemy-Study-Plan.md` — structured guide for in28minutes Java course: recommended vs full path, daily study routine, time estimates at 2/3/4 hrs per day, week-by-week schedules, section reference (62 sections), progress checklist, and tips.
+
+**Why:** User requested a reusable markdown plan to cover the Udemy Java course properly with clear timelines.
+
+**Files:** `docs/Java-Udemy-Study-Plan.md`, `ReadmeProject.md`, `ProjectMemory.md`
+
+---
 
 ### 2026-08-09 — Resume: 6+ years experience
 
