@@ -1,6 +1,6 @@
 ---
 name: Gurpreet Singh Bhupal
-title: Senior Frontend Developer
+title: Senior Java Full stack developer
 email: gurpreetOfficial0596@gmail.com / gsingh5496@gmail.com 
 phone:
   - "8982583673"
