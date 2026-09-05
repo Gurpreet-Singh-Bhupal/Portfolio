@@ -56,7 +56,6 @@ I specialize in building scalable React applications with a strong focus on perf
 ## Backend
 
 - Core Java
-- Node.js
 - REST APIs
 - Swagger
 
