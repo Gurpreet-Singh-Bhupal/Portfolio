@@ -15,7 +15,7 @@ photoPath: /pssprt.jpg
 
 # Summary
 
-Results-driven Senior Frontend Developer with 6+ years of experience building scalable, high-performance web applications using React.js, Redux, JavaScript, and TypeScript. Skilled in AI-assisted development and prompt engineering—applying modern tooling alongside strong UI expertise to solve complex frontend challenges, build reusable component architectures, and deliver user-centric applications with excellent performance and maintainability.
+Results-driven Senior Java Full Stack Developer with 6+ years of software development experience, with experience in Java, Spring Boot, REST APIs, React.js, and JavaScript. Experienced in developing and integrating RESTful APIs, implementing application-level business logic, and building responsive, reusable React-based user interfaces. Strong hands-on experience in frontend development with additional experience working on Java and Spring Boot-based backend services. Skilled in AI-assisted development and prompt engineering to improve development productivity, solve technical challenges, and deliver maintainable, high-quality applications.
 
 ---
 
@@ -56,11 +56,15 @@ I specialize in building scalable React applications with a strong focus on perf
 ## Backend
 
 - Core Java
+- Springboot
 - REST APIs
+- Hibernate
+- Springdata JPA
 - Swagger
 
 ## Database & Data
 
+- SQL
 - MySQL
 - JSON
 - Swagger
@@ -94,16 +98,16 @@ Worked as a Frontend Developer for Three UK (Hutchison 3G UK Ltd.), a major UK t
 
 Responsibilities
 
-- Developed customer-facing e-commerce platform.
-- Built device catalog.
-- Developed plan builder.
-- Implemented payment processing workflows.
-- Developed B2B enterprise portal.
-- Built responsive UI for both consumer and business customers.
+- Developed responsive React.js UI for device catalog, plan selection, order, and payment-related workflows.
+- Integrated React applications with RESTful APIs for product, customer, and order data.
+- Worked with Java/Spring Boot backend APIs for data retrieval and application-level business operations.
 - Worked in Agile environment.
 
 Technologies
 
+- Java
+- Spring Boot
+- RESTful APIs
 - React.js
 - JavaScript
 - Redux
@@ -120,28 +124,32 @@ Achievements
 
 Description
 
-Worked on Vodafone Romania's enterprise retail platform, enabling store representatives to manage customer orders for mobile services, broadband, TV, and fixed-line products. Over the past 1 year 3 months, gained strong telecom domain knowledge of telecom order management, customer onboarding, product catalog, and service provisioning while developing scalable React-based applications.
+Worked on Vodafone Romania's enterprise retail platform, enabling store representatives to manage customer orders for mobile, broadband, TV, and fixed-line products. Over the past 1 year 3 months, gained strong telecom domain knowledge of telecom order management, customer onboarding, product catalog, and service provisioning while developing scalable React-based applications.
 
 Responsibilities
 
-- Developed retail ordering flows for mobile, broadband, TV, and fixed-line products on the enterprise retail platform.
-- Built scalable React-based applications for store representatives across order management and service provisioning.
-- Applied telecom domain knowledge to customer onboarding, product catalog, and telecom order workflows.
-- Built Simulator UI tool with SSH integration so testers could manage server data from one application.
-- Reduced manual effort and context switching for the QA team through unified testing tooling.
-- Collaborated with QA and cross-functional teams in an Agile delivery environment.
+- Developed React.js features for customer onboarding, product selection, order creation, and order management workflows.
+- Developed and integrated RESTful APIs using Java/Spring Boot for customer, product, and order-related operations.
+- Implemented backend business logic with request/response models, validations, and exception handling.
+- Worked with Spring Data JPA/Hibernate and MySQL for application data retrieval and persistence.
+- Built a React-based Simulator UI with SSH integration to manage server-side data through a centralized interface.
 
 Technologies
 
+- Java
+- Spring Boot
+- RESTful APIs
+- Spring Data JPA
+- Hibernate
+- MySQL
 - React.js
 - JavaScript
 - Redux
 - Redux Saga
-- Node.js
-- SSH
 - Unix
+- SSH
 - Cursor AI
-- Prompt Engineering
+- AI-assist development
 
 Achievements
 
@@ -155,29 +163,32 @@ Achievements
 
 Description
 
-Worked on manufacturing management applications for Toyota.
+Worked as a Senior Software Developer on a manufacturing operations management application supporting plant operations, including invoice generation, parts scanning, packaging, and truck loading workflows.
 
 Responsibilities
 
-- Invoice generation.
-- Module scanning.
-- Packaging workflow.
-- Truck loading management.
-- Production support.
-- Agile development.
-- Bug fixing using JIRA.
+- Developed React.js features for parts scanning, invoice generation, packaging, and shipment workflows.
+- Integrated frontend applications with RESTful APIs for manufacturing and shipment-related data.
+- Worked with Java/Spring Boot backend services for business logic, validations, and data processing.
+- Used Redux and TypeScript to build reusable components and manage application state.
+- Handled production support and bug fixes using JIRA.
 
 Technologies
 
+- Java
+- Spring Boot
+- RESTful APIs
 - React.js
 - JavaScript
 - TypeScript
 - Redux
-- HTML
-- CSS
-- Core Java
+- HTML5
+- CSS3
 - JIRA
 
+Achievements
+
+- Certification of Appreciation - For meeting project task in given deadlines.
 ---
 
 ## Associate Analyst | PurpleTalk India Pvt. Ltd. | 2021 – 2023
