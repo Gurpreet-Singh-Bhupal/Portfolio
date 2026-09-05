@@ -21,13 +21,14 @@ Results-driven Senior Java Full Stack Developer with 6+ years of software develo
 
 # About
 
-I specialize in building scalable React applications with a strong focus on performance, clean architecture, and user experience—using React.js, TypeScript, Redux, and reusable component-driven patterns. Throughout my career, I've delivered enterprise applications across telecom, healthcare, manufacturing, retail, and analytics domains. I enjoy solving complex frontend challenges and collaborating with cross-functional teams, while also applying AI-assisted development, prompt engineering, and Java backend skills to build robust, production-ready solutions.
+I specialize in building scalable full-stack applications with a strong focus on performance, clean architecture, and user experience—using React.js, TypeScript, Redux, reusable component-driven patterns, Java, Spring Boot, and RESTful APIs. I have hands-on experience working across frontend and backend layers, including API development, application-level business logic, validations, data processing, and persistence using Spring Data JPA/Hibernate. Throughout my career, I've delivered enterprise applications across telecom, healthcare, manufacturing, retail, and analytics domains. I enjoy solving complex technical challenges and building robust, production-ready solutions while applying AI-assisted development, prompt engineering, and modern Java backend technologies.
 
 ---
 
 # Interests
 
-- Building Scalable UI Systems
+- Full-Stack Application Development
+- Scalable UI & Backend Systems
 - AI-assisted Development
 - Prompt Engineering
 - Travelling
