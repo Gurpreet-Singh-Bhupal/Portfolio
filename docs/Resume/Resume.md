@@ -21,7 +21,7 @@ Results-driven Senior Java Full Stack Developer with 6+ years of software develo
 
 # About
 
-I specialize in building scalable full-stack applications with a strong focus on performance, clean architecture, and user experience—using React.js, TypeScript, Redux, reusable component-driven patterns, Java, Spring Boot, and RESTful APIs. I have hands-on experience working across frontend and backend layers, including API development, application-level business logic, validations, data processing, and persistence using Spring Data JPA/Hibernate. Throughout my career, I've delivered enterprise applications across telecom, healthcare, manufacturing, retail, and analytics domains. I enjoy solving complex technical challenges and building robust, production-ready solutions while applying AI-assisted development, prompt engineering, and modern Java backend technologies.
+I specialize in building scalable full-stack applications with a strong focus on performance, clean architecture, and user experience—using React.js, TypeScript, Redux, reusable component-driven patterns, Java, Spring Boot, RESTful APIs, and microservices-based applications. I have hands-on experience working across frontend and backend layers, including API development, application-level business logic, validations, data processing, and persistence using Spring Data JPA/Hibernate. Throughout my career, I've delivered enterprise applications across telecom, healthcare, manufacturing, retail, and analytics domains. I enjoy solving complex technical challenges and building robust, production-ready solutions while applying AI-assisted development, prompt engineering, and modern Java backend technologies.
 
 ---
 
@@ -51,16 +51,15 @@ I specialize in building scalable full-stack applications with a strong focus on
 - Redux Saga
 - Redux Thunk
 - Redux Toolkit
-- JSON
 - ES6+
 
 ## Backend
 
 - Core Java
-- Springboot
+- Spring Boot
 - REST APIs
 - Hibernate
-- Springdata JPA
+- Spring Data JPA
 - Swagger
 
 ## Database & Data
@@ -68,7 +67,6 @@ I specialize in building scalable full-stack applications with a strong focus on
 - SQL
 - MySQL
 - JSON
-- Swagger
 
 ## Tools & Platforms
 
@@ -80,10 +78,9 @@ I specialize in building scalable full-stack applications with a strong focus on
 - Agile
 - Unix
 - Jest
-- Webpack
-- Babel
 - Vite
 - Tailwind CSS
+- Swagger
 
 ---
 
@@ -101,7 +98,7 @@ Responsibilities
 
 - Developed responsive React.js UI for device catalog, plan selection, order, and payment-related workflows.
 - Integrated React applications with RESTful APIs for product, customer, and order data.
-- Worked with Java/Spring Boot backend APIs for data retrieval and application-level business operations.
+- Worked with Java/Spring Boot backend APIs within a microservices-based environment for data retrieval and application-level business operations.
 - Worked in Agile environment.
 
 Technologies
@@ -125,7 +122,7 @@ Achievements
 
 Description
 
-Worked on Vodafone Romania's enterprise retail platform, enabling store representatives to manage customer orders for mobile, broadband, TV, and fixed-line products. Over the past 1 year 3 months, gained strong telecom domain knowledge of telecom order management, customer onboarding, product catalog, and service provisioning while developing scalable React-based applications.
+Worked on Vodafone Romania's enterprise retail platform within a microservices-based environment, enabling store representatives to manage customer orders for mobile, broadband, TV, and fixed-line products. Over the past 1 year 3 months, gained strong telecom domain knowledge of telecom order management, customer onboarding, product catalog, and service provisioning while developing scalable React-based applications.
 
 Responsibilities
 
