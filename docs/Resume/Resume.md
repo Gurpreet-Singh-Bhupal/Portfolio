@@ -51,7 +51,7 @@ I specialize in building scalable React applications with a strong focus on perf
 - Redux Thunk
 - Redux Toolkit
 - JSON
-- ES7
+- ES6+
 
 ## Backend
 
